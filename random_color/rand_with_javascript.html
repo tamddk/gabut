@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Project Gabut By Mas Sodik, Silahkan Download Langusung Gaes - tamddk/gabut atau Hub Mas Sodik di Instagram: @tamddk"
+    />
+    <title>Sodik Project - Random Color RGBA</title>
+  </head>
+  <body call_me_sodik>
+    <script>
+      function random_bg_color() {
+        var x = Math.floor(Math.random() * 256);
+        var y = Math.floor(Math.random() * 256);
+        var z = Math.floor(Math.random() * 256);
+        var bgColor = "rgb(" + x + "," + y + "," + z + ")";
+        document.body.style.background = bgColor;
+      }
+
+      setInterval(function () {
+        random_bg_color();
+      }, 100); // Change Delay Time
+    </script>
+  </body>
+</html>
